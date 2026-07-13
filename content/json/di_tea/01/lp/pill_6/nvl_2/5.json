@@ -1,0 +1,1 @@
+{"statement": "ARRASTE OS NÚMEROS MENORES QUE 15.", "background": "01-lp-pill_6-nvl_2-5", "layoutID": "bola_ao_alvo_2", "random": false, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "✔ 10 ✔ 12 ✖ 16 ✖ 18", "img": "", "result": false}]}, {"txt_ref": [], "img_ref": [], "options": [{"text": "✔ 13 ✔ 14 ✖ 19 ✖ 20", "img": "", "result": false}]}]}

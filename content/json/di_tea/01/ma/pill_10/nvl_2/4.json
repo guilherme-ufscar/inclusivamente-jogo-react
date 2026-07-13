@@ -1,0 +1,1 @@
+{"statement": "MISSÃO: QUAL É A MELHOR SOLUÇÃO PARA O PROBLEMA?", "background": "01-ma-pill_10-nvl_2-4", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "CONVERSAR E RESOLVER", "img": "", "result": true}, {"text": "EMPURRAR", "img": "", "result": false}, {"text": "IGNORAR E SAIR", "img": "", "result": false}]}]}

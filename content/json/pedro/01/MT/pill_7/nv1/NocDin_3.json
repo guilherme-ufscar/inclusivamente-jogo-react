@@ -1,0 +1,49 @@
+{
+  "statement": "QUAL É MENOR?",
+  "background": "bg_2",
+  "layoutID": "moscas_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "",
+          "img": "10c",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "25c",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "50c",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "",
+          "img": "5c",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "10c",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "25c",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "themes": {
+    "sala_aula": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-21-30_web-theme-sala-aula/sala-aula.png",
+    "parque": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-21-41_web-theme-parque/parque.png",
+    "fazenda": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-21-53_web-theme-fazenda/fazenda.png",
+    "feira": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-22-05_web-theme-feira/feira.png",
+    "cozinha": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-22-16_web-theme-cozinha/cozinha.png",
+    "biblioteca": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-22-27_web-theme-biblioteca/biblioteca.png",
+    "natureza": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-22-38_web-theme-natureza/natureza.png",
+    "praia": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-22-48_web-theme-praia/praia.png",
+    "corpo": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-23-00_web-theme-corpo/corpo.png",
+    "numeros": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-23-14_web-theme-numeros/numeros.png",
+    "animais": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-23-24_web-theme-animais/animais.png",
+    "cidade": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-23-35_web-theme-cidade/cidade.png",
+    "espaco": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-23-48_web-theme-espaco/espaco.png",
+    "musica": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-23-58_web-theme-musica/musica.png",
+    "esporte": "https://painel.inclusivamentemaiseduca.com.br/uploads/game-assets/2026-07-13T14-24-07_web-theme-esporte/esporte.png"
+  },
+  "generatedAt": "2026-07-13T14:24:16.985Z"
+}

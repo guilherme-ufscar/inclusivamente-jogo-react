@@ -1,0 +1,53 @@
+{
+  "statement": "ACERTE O DINHEIRO PARA O PRODUTO",
+  "background": "bg_ceu",
+  "layoutID": "piratas_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "lapis"
+      ],
+      "options": [
+        {
+          "text": "",
+          "img": "5r",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "2r",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "10R",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "ESCOVA"
+      ],
+      "options": [
+        {
+          "text": "",
+          "img": "10R",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "20R",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "50R",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

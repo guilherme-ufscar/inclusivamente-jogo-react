@@ -1,0 +1,1 @@
+{"statement": "NA CIDADE ENCONTRAMOS MUITAS SINALIZAÇÕES. QUAL É A {PLACA DE TRÂNSITO}?", "background": "02-lp-pill_10-nvl_1-2", "layoutID": "simples_1", "random": true, "steps": [{"txt_ref": [], "img_ref": ["img_ref"], "options": [{"text": "", "img": "placa_0", "result": true}, {"text": "", "img": "placa_0", "result": false}, {"text": "", "img": "placa_1", "result": false}]}]}

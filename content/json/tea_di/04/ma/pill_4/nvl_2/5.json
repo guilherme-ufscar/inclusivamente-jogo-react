@@ -1,0 +1,1 @@
+{"statement":"QUAL ITEM TEM A SEGUNDA MAIOR QUANTIDADE? (A=5, B=9, C=7)","background":"bg_sala_aula","layoutID":"grade_3","random":true,"steps":[{"txt_ref":["QUAL ITEM TEM A SEGUNDA MAIOR QUANTIDADE? (A=5, B=9, C=7)"],"img_ref":[],"options":[{"text":"C","img":"c","result":true},{"text":"B","img":"b","result":false},{"text":"A","img":"a","result":false}]}]}

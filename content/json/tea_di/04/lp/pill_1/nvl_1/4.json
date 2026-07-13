@@ -1,0 +1,1 @@
+{"statement":"O LEÃO É UM ANIMAL CARNÍVORO. O QUE O LEÃO COME?","background":"bg_ceu","layoutID":"piratas_1","random":true,"steps":[{"txt_ref":[],"img_ref":["leao"],"options":[{"text":"CARNE","img":"","result":true},{"text":"PLANTAS","img":"","result":false},{"text":"PEDRAS","img":"","result":false}]}]}

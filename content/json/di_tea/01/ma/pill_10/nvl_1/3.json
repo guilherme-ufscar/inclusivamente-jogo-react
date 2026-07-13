@@ -1,0 +1,1 @@
+{"statement": "MISSÃO: ESCOLHA A FALA CORRETA PARA BRINCAR.", "background": "01-ma-pill_10-nvl_1-3", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "POSSO BRINCAR?", "img": "", "result": true}, {"text": "SAI DAQUI!", "img": "", "result": false}, {"text": "NÃO É MEU!", "img": "", "result": false}]}]}

@@ -1,0 +1,59 @@
+{
+  "statement": "ARRASTE NA ORDEM CORRETA",
+  "background": "bg_trem",
+  "layoutID": "trem_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "1",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "2",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "3",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "4",
+          "img": "",
+          "result": true
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "5",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "6",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "7",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "8",
+          "img": "",
+          "result": true
+        }
+      ]
+    }
+  ]
+}

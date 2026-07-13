@@ -1,0 +1,1 @@
+{"statement":"QUAL CATEGORIA TEM VALOR IGUAL A 6? (A=4, B=6, C=8)","background":"bg_sala_aula","layoutID":"grade_3","random":true,"steps":[{"txt_ref":["QUAL CATEGORIA TEM VALOR IGUAL A 6? (A=4, B=6, C=8)"],"img_ref":[],"options":[{"text":"B","img":"b","result":true},{"text":"A","img":"a","result":false},{"text":"C","img":"c","result":false}]}]}

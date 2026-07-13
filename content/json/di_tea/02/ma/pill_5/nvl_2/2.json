@@ -1,0 +1,1 @@
+{"statement": "QUAL É A BARRA MENOR?", "background": "02-ma-pill_5-nvl_2-2", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "BARRA VERDE", "img": "", "result": true}, {"text": "AZUL", "img": "", "result": false}, {"text": "VERMELHA", "img": "", "result": false}]}]}

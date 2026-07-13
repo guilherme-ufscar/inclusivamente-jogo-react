@@ -1,0 +1,15 @@
+{
+  "total": 1259,
+  "imported": 1259,
+  "needsReview": 61,
+  "byPersona": {
+    "di_tea": 970,
+    "pedro": 59,
+    "tea_di": 230
+  },
+  "byChoiceType": {
+    "single": 1239,
+    "multiple": 20
+  },
+  "errors": []
+}

@@ -1,0 +1,49 @@
+{
+  "statement": "ARRASTE AS IMAGENS NA ORDEM CORRETA",
+  "background": "bg_escola2",
+  "layoutID": "as_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "",
+          "img": "acordar",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "escovar",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "sala_de_aula",
+          "result": true
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "",
+          "img": "comer",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "brigar",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "guarda_no_armario",
+          "result": true
+        }
+      ]
+    }
+  ]
+}

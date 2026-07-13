@@ -1,0 +1,1 @@
+{"statement": "QUAL FRUTA FOI MAIS ESCOLHIDA?", "background": "02-ma-pill_5-nvl_1-4", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "BANANA", "img": "", "result": true}, {"text": "UVA", "img": "", "result": false}, {"text": "PERA", "img": "", "result": false}]}]}

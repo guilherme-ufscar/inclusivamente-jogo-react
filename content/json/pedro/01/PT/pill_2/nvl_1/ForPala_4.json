@@ -1,0 +1,53 @@
+{
+  "statement": "RESPONDA CORRETAMENTE",
+  "background": "bg_5",
+  "layoutID": "moscas_1",
+  "steps": [
+    {
+      "txt_ref": [
+        "QUANTAS SÍLABAS TEM A PALAVRA BO-LA?"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "2",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "1",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "3",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "QUANTAS SÍLABAS TEM A PALAVRA MA-CA-CO?"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "3",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "2",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "4",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

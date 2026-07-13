@@ -1,0 +1,1 @@
+{"statement": "COMPLETE A FRASE.", "background": "02-lp-pill_2-nvl_1-2", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "CORRENDO", "img": "", "result": true}, {"text": "MESA", "img": "", "result": false}, {"text": "AZUL", "img": "", "result": false}]}]}

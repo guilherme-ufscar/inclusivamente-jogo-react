@@ -1,0 +1,57 @@
+{
+  "statement": "LEIA O PROBLEMA E MARQUE A PERGUNTA.",
+  "background": "bg_5",
+  "layoutID": "simples_1",
+  "steps": [
+    {
+      "txt_ref": [
+        " PROBLEMA: JOÃO TINHA 5 BALAS. ELE DEU 2 PARA O AMIGO."
+      ],
+      "img_ref": [
+        "correndo"
+      ],
+      "options": [
+        {
+          "text": "QUANTAS BALAS RESTARAM?",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "ONDE JOÃO ESTAVA?",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "QUEM ERA O AMIGO?",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "PROBLEMA: ANA TINHA 4 MAÇÃS. COMEU 1."
+      ],
+      "img_ref": [
+        "ESCOVA"
+      ],
+      "options": [
+        {
+          "text": "QUANTAS MAÇÃS SOBRARAM?",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "QUAL ERA A COR DA MAÇÃ?",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "QUEM ERA ANA?",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

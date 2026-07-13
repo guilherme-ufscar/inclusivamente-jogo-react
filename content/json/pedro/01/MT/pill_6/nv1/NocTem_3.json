@@ -1,0 +1,53 @@
+{
+  "statement": "QUAL DIA VEM DEPOIS?",
+  "background": "bg_4",
+  "layoutID": "moscas_1",
+  "steps": [
+    {
+      "txt_ref": [
+        "DA SEGUNDA"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "TERÇA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "QUARTA",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "DOMINGO",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "DA QUARTA"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "QUINTA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "SEXTA",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "SEGUNDA",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

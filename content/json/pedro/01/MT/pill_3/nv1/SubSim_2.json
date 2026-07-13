@@ -1,0 +1,57 @@
+{
+  "statement": "RESPONDA",
+  "background": "bg_escola2",
+  "layoutID": "simples_1",
+  "steps": [
+    {
+      "txt_ref": [
+        "RETIRE 3 MAÇÃS. QUANTAS SOBRAM?"
+      ],
+      "img_ref": [
+        "bebendo"
+      ],
+      "options": [
+        {
+          "text": "4",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "3",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "5",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "RETIRE 4 MAÇÃS. QUANTAS SOBRAM?"
+      ],
+      "img_ref": [
+        "bebendo"
+      ],
+      "options": [
+        {
+          "text": "5",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "4",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "6",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

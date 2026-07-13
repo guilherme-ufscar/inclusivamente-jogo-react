@@ -1,0 +1,1 @@
+{"statement": "QUAL ITEM TEM MENOR NÚMERO?", "background": "02-ma-pill_4-nvl_1-3", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "PERA", "img": "", "result": true}, {"text": "MAÇÃ", "img": "", "result": false}, {"text": "UVA", "img": "", "result": false}]}]}

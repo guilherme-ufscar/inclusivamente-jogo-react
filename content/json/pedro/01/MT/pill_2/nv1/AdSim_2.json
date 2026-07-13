@@ -1,0 +1,53 @@
+{
+  "statement": "SOME OS OBJETOS",
+  "background": "bg_rua",
+  "layoutID": "arqueiro_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "abelha"
+      ],
+      "options": [
+        {
+          "text": "6",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "5",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "7",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "abelha"
+      ],
+      "options": [
+        {
+          "text": "9",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "8",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "10",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

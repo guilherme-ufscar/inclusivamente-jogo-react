@@ -1,0 +1,55 @@
+{
+  "statement": "QUAL CONTA RESOLVE O PROBLEMA?",
+  "background": "bg_BOLICHE",
+  "layoutID": "boliche_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "correndo"
+      ],
+      "options": [
+        {
+          "text": "3+4",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "3-4",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "4-3",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "HÁ 9 MAÇÃS. 4 CAÍRAM. QUANTAS FICARAM?"
+      ],
+      "img_ref": [
+        "ESCOVA"
+      ],
+      "options": [
+        {
+          "text": "8-2",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "8+2",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "2+8",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

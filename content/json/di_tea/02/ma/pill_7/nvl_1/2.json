@@ -1,0 +1,1 @@
+{"statement": "QUAL É A FASE DA CHUVA?", "background": "02-ma-pill_7-nvl_1-2", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "CHUVA", "img": "", "result": true}, {"text": "SOL", "img": "", "result": false}, {"text": "VENTO", "img": "", "result": false}]}]}

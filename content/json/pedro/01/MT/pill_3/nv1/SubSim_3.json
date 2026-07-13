@@ -1,0 +1,53 @@
+{
+  "statement": "QUAL É O RESULTADO?",
+  "background": "bg_escola",
+  "layoutID": "simples_1",
+  "steps": [
+    {
+      "txt_ref": [
+        "9-4"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "5",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "4",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "6",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "12-4"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "8",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "7",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "9",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

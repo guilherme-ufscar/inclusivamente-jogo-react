@@ -1,0 +1,1 @@
+{"statement":"ESCREVA SOBRE COMO FOI SEU DIA.","background":"bg_escola2","layoutID":"simples_4","random":true,"steps":[{"txt_ref":["Eu cheguei na escola e <u>{0}</u> e <u>{1}</u>, depois eu <u>{2}</u>."],"img_ref":["","sala_de_aula4"],"options":[{"text":"Estudei","img":"","result":true},{"text":"Aprendi","img":"","result":true},{"text":"Brinquei","img":"","result":true}]}]}

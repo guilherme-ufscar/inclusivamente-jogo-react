@@ -1,0 +1,1 @@
+{"statement": "QUAL ESTÁ ATRÁS?", "background": "01-ma-pill_7-nvl_2-5", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "ATRÁS", "img": "", "result": true}, {"text": "FRENTE", "img": "", "result": false}, {"text": "AO LADO", "img": "", "result": false}]}]}

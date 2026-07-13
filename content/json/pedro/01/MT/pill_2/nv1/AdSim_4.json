@@ -1,0 +1,43 @@
+{
+  "statement": "ARRASTE O RESULTADO CORRETO",
+  "background": "bg_cabo_de_guerra",
+  "layoutID": "cabo_de_guerra_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "abelha"
+      ],
+      "options": [
+        {
+          "text": "12",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "11",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "abelha"
+      ],
+      "options": [
+        {
+          "text": "14",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "13",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

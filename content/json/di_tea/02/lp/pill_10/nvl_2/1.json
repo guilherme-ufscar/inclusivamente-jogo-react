@@ -1,0 +1,1 @@
+{"statement": "HOJE VAI TER BOLO! VOCÊ SABE QUAL É A {RECEITA} DO MESTRE CUCA?", "background": "02-lp-pill_10-nvl_2-1", "layoutID": "simples_1", "random": true, "steps": [{"txt_ref": [], "img_ref": ["img_ref"], "options": [{"text": "", "img": "items_0", "result": true}, {"text": "", "img": "items_1", "result": false}, {"text": "", "img": "items_2", "result": false}]}]}

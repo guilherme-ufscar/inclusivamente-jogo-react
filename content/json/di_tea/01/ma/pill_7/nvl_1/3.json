@@ -1,0 +1,1 @@
+{"statement": "QUAL OBJETO ESTÁ ENTRE A CADEIRA E A MESA?", "background": "01-ma-pill_7-nvl_1-3", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "BOLA ENTRE", "img": "", "result": true}, {"text": "BOLA NA FRENTE", "img": "", "result": false}, {"text": "BOLA ATRÁS", "img": "", "result": false}]}]}

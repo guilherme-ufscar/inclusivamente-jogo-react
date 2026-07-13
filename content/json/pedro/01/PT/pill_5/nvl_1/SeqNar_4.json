@@ -1,0 +1,53 @@
+{
+  "statement": "QUAL IMAGEM VEM DEPOIS?",
+  "background": "bg_2",
+  "layoutID": "simples_4",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "SALA_DE_AULA4"
+      ],
+      "options": [
+        {
+          "text": "IR A ESCOLA",
+          "img": "SALA_DE_AULA",
+          "result": true
+        },
+        {
+          "text": "DORMIR",
+          "img": "DORMIR",
+          "result": false
+        },
+        {
+          "text": "JANTAR",
+          "img": "COMER",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "SALA_DE_AULA4"
+      ],
+      "options": [
+        {
+          "text": "TOMAR BANHO",
+          "img": "ESCOVAR",
+          "result": true
+        },
+        {
+          "text": "ACORDAR",
+          "img": "ACORDAR",
+          "result": false
+        },
+        {
+          "text": "ALMOÇAR",
+          "img": "COMER",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

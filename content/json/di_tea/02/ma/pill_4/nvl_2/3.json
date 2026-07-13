@@ -1,0 +1,1 @@
+{"statement": "QUAL ITEM SOMA 8?", "background": "02-ma-pill_4-nvl_2-3", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "MAÇÃ+PERA", "img": "", "result": true}, {"text": "PERA+UVA", "img": "", "result": false}, {"text": "MAÇÃ+UVA", "img": "", "result": false}]}]}

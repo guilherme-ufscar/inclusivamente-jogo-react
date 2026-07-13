@@ -1,0 +1,1 @@
+{"statement": "QUAL DIA TEVE MAIS VENDAS?", "background": "02-ma-pill_4-nvl_2-1", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "TERÇA", "img": "", "result": true}, {"text": "SEGUNDA", "img": "", "result": false}, {"text": "QUARTA", "img": "", "result": false}]}]}

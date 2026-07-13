@@ -1,0 +1,63 @@
+{
+  "statement": "ARRASTE AS SÍLABAS PARA FORMAR A PALAVRA",
+  "background": "bg_5",
+  "layoutID": "bolhas_4",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "chocolate"
+      ],
+      "options": [
+        {
+          "text": "BO",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "LO",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "MA",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "CA",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "BOLA"
+      ],
+      "options": [
+        {
+          "text": "CA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "SA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "PA",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "TO",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"statement": "VOCÊ GOSTA DE ANIVERSÁRIOS? DESCUBRA QUAL SERÁ O {HORÁRIO} DA FESTA.", "background": "02-lp-pill_10-nvl_2-3", "layoutID": "simples_1", "random": true, "steps": [{"txt_ref": [], "img_ref": ["img_ref"], "options": [{"text": "15 HORAS", "img": "", "result": true}, {"text": "14 HORAS", "img": "", "result": false}, {"text": "16 HORAS", "img": "", "result": false}]}]}

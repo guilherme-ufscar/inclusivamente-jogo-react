@@ -1,0 +1,31 @@
+{
+    "statement": "Há 5 filas com 2 cadeiras cada. 2 cadeiras quebraram. QUANTAS CADEIRAS PODEM SER USADAS?",
+    "background": "bg_sala_aula",
+    "layoutID": "grade_3",
+    "random": true,
+    "steps": [
+        {
+            "txt_ref": [
+                "Há 5 filas com 2 cadeiras cada. 2 cadeiras quebraram. QUANTAS CADEIRAS PODEM SER USADAS?"
+            ],
+            "img_ref": [],
+            "options": [
+                {
+                    "text": "8",
+                    "img": "8",
+                    "result": true
+                },
+                {
+                    "text": "10",
+                    "img": "10",
+                    "result": false
+                },
+                {
+                    "text": "6",
+                    "img": "6",
+                    "result": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+  "statement": "QUAL IMAGEM CONTINUA?",
+  "background": "bg_5",
+  "layoutID": "bolhas_8",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "aluno"
+      ],
+      "options": [
+        {
+          "text": "",
+          "img": "escova",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "colher",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "cola",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "aluna"
+      ],
+      "options": [
+        {
+          "text": "",
+          "img": "escova",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "colher",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "cola",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

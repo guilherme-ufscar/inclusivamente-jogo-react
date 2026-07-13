@@ -1,0 +1,53 @@
+{
+  "statement": "QUAL É O NÚMERO?",
+  "background": "bg_futebol",
+  "layoutID": "simples_2",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "bola"
+      ],
+      "options": [
+        {
+          "text": "7",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "5",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "9",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "bola"
+      ],
+      "options": [
+        {
+          "text": "12",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "10",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "15",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

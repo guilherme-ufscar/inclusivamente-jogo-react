@@ -1,0 +1,53 @@
+{
+  "statement": "LEIA A FRASE E TOQUE NA IMAGEM CORRETA",
+  "background": "bg_6",
+  "layoutID": "moscas_2",
+  "steps": [
+    {
+      "txt_ref": [
+        "O GATO DORME"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "",
+          "img": "gato",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "casa",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "bola",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "O MENINO CORRE"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "",
+          "img": "correndo",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "acordar",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "escovar",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

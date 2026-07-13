@@ -1,0 +1,49 @@
+{
+  "statement": "O QUE DEMORA MAIS TEMPO?",
+  "background": "bg_boliche",
+  "layoutID": "boliche_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "VIAJAR",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "COMER",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "PISCAR",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "DORMIR",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "BEBER ÁGUA",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "PULAR",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

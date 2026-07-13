@@ -1,0 +1,53 @@
+{
+  "statement": "QUAL É A PRÓXIMA COR?",
+  "background": "bg_rua",
+  "layoutID": "arqueiro_1",
+  "steps": [
+    {
+      "txt_ref": [
+        "VERMELHO, AZUL, VERMELHO, __"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "AZUL",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "VERDE",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "AMARELO",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "AZUL, AMARELO, AZUL, __"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "AMARELO",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "VERMELHO",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "VERDE",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

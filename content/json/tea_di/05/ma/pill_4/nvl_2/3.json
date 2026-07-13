@@ -1,0 +1,1 @@
+{"statement":"ATIVIDADE DIGITAL: QUAL É MAIOR? 0,65 OU 0,56?","background":"bg_sala_aula","layoutID":"grade_3","random":true,"steps":[{"txt_ref":["ATIVIDADE DIGITAL: QUAL É MAIOR? 0,65 OU 0,56?"],"img_ref":[],"options":[{"text":"0,65","img":"0,65","result":true},{"text":"0,56","img":"0,56","result":false},{"text":"SÃO IGUAIS","img":"são_iguais","result":false}]}]}

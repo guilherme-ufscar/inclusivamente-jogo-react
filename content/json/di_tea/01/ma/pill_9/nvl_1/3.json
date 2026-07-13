@@ -1,0 +1,1 @@
+{"statement": "VAMOS CONTAR QUANTOS LÁPIS MARIA TEM NA SUA COLEÇÃO?", "background": "01-ma-pill_9-nvl_1-3", "layoutID": "simples_1", "random": true, "steps": [{"txt_ref": [], "img_ref": ["img_ref1"], "options": [{"text": "13", "img": "", "result": false}, {"text": "14", "img": "", "result": true}, {"text": "15", "img": "", "result": false}]}]}

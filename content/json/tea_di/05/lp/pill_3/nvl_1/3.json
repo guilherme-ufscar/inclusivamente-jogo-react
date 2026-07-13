@@ -1,0 +1,1 @@
+{"statement":"ESCOLHA A PALAVRA QUE LIGA AS IDEIAS.","background":"bg_feira3","layoutID":"moscas_3","random":true,"steps":[{"txt_ref":["Eu gosto de frutas <u>{0}</u> verduras."],"img_ref":[],"options":[{"text":"E","img":"","result":true},{"text":"MAS","img":"","result":false},{"text":"PORQUE","img":"","result":false}]}]}

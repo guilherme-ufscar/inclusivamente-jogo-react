@@ -1,0 +1,73 @@
+{
+  "statement": "TOQUE NAS LETRAS QUE FORMAM BOLA",
+  "background": "bg_jardim_1",
+  "layoutID": "moscas_4",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "bola"
+      ],
+      "options": [
+        {
+          "text": "O",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "B",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "L",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "A",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "M",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "BOLA"
+      ],
+      "options": [
+        {
+          "text": "B",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "O",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "L",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "A",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "T",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

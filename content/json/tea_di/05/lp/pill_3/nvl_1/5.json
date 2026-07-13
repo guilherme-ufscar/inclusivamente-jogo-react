@@ -1,0 +1,1 @@
+{"statement":"(1) ELE ESTUDOU MUITO. (2) JOÃO QUERIA PASSAR NA PROVA. (3) ELE CONSEGUIU NOTA ALTA.","background":"bg_escola2","layoutID":"simples_2","random":true,"steps":[{"txt_ref":["Qual a ordem correta?"],"img_ref":[],"options":[{"text":"2 → 1 → 3","img":"","result":true},{"text":"1 → 2 → 3","img":"","result":false},{"text":"3 → 2 → 1","img":"","result":false}]}]}

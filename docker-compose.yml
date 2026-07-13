@@ -1,0 +1,70 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: inclusiva
+      POSTGRES_PASSWORD: inclusiva
+      POSTGRES_DB: inclusiva
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U inclusiva -d inclusiva"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://inclusiva:inclusiva@db:5432/inclusiva
+      PORT: "3001"
+      MEDIA_ROOT: /app/content/media
+      TTS_URL: http://tts:3002
+    volumes:
+      - ./content/import:/app/content/import:ro
+      - ./content/media:/app/content/media:ro
+      - ./apps/api/prisma/seed.js:/app/prisma/seed.js:ro
+      - ./apps/api/src:/app/src:ro
+    ports:
+      - "3001:3001"
+    depends_on:
+      db:
+        condition: service_healthy
+      tts:
+        condition: service_started
+
+  # Neural pt-BR TTS (edge-tts) — natural female voice, cached, no OmniVoice wait
+  tts:
+    build:
+      context: ./apps/tts
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      PORT: "3002"
+      VOICE: pt-BR-FranciscaNeural
+      CACHE_DIR: /cache
+    volumes:
+      - ./content/media/tts-cache:/cache
+    ports:
+      - "3002:3002"
+
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: ""
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+
+volumes:
+  pgdata:

@@ -1,0 +1,53 @@
+{
+  "statement": "TOQUE NA LETRA",
+  "background": "bg_5",
+  "layoutID": "moscas_1",
+  "steps": [
+    {
+      "txt_ref": [
+        "QUAL LETRA FAZ O SOM /B/?"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "",
+          "img": "PATO",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "PORCO",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "POLVO",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "QUAL LETRA FAZ O SOM /M/?"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "",
+          "img": "PORCO",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "POLVO",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "PATO",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

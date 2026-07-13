@@ -1,0 +1,49 @@
+{
+  "statement": "COMPLETE A FRASE: O GATO ____.",
+  "background": "bg_CABO_DE_GUERRA",
+  "layoutID": "CABO_DE_GUERRA_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "DORME",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "AZUL",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "CASA",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "CORRE",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "GRANDE",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "SAPATO",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

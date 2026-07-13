@@ -1,0 +1,1 @@
+{"statement":"QUAL REPRESENTA METADE?","background":"bg_doceria_0","layoutID":"moscas_1","random":true,"steps":[{"txt_ref":[],"img_ref":["circulo_1_2"],"options":[{"text":"1/2","img":"","result":true},{"text":"1/3","img":"","result":false},{"text":"1/4","img":"","result":false}]}]}

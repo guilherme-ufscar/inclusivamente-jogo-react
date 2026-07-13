@@ -1,0 +1,1 @@
+{"statement": "QUAL LINHA MOSTRA 3?", "background": "02-ma-pill_4-nvl_1-5", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "LINHA 2", "img": "", "result": true}, {"text": "LINHA 1", "img": "", "result": false}, {"text": "LINHA 3", "img": "", "result": false}]}]}

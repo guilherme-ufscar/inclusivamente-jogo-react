@@ -1,0 +1,1 @@
+{"statement": "QUAL OBJETO ESTÁ À DIREITA DO MENINO?", "background": "01-ma-pill_7-nvl_1-2", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "BOLA À DIREITA", "img": "", "result": true}, {"text": "BOLA À ESQUERDA", "img": "", "result": false}, {"text": "BOLA ATRÁS", "img": "", "result": false}]}]}

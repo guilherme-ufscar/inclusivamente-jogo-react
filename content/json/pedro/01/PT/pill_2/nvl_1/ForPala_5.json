@@ -1,0 +1,59 @@
+{
+  "statement": "ARRASTE AS LETRAS PARA FORMAR MALA",
+  "background": "bg_noite",
+  "layoutID": "as_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "M",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "A",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "L",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "A",
+          "img": "",
+          "result": true
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "M",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "A",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "L",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "A",
+          "img": "",
+          "result": true
+        }
+      ]
+    }
+  ]
+}

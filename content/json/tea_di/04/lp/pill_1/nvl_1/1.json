@@ -1,0 +1,1 @@
+{"statement":" SOL É UMA ESTRELA. ELE EMITE LUZ E CALOR. O QUE O SOL É?","background":"bg_espaco","layoutID":"simples_1","random":true,"steps":[{"txt_ref":[],"img_ref":["sol"],"options":[{"text":"UMA ESTRELA","img":"","result":true},{"text":"UM PLANETA","img":"","result":false},{"text":"UMA PEDRA","img":"","result":false}]}]}

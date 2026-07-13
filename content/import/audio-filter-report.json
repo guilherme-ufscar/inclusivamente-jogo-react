@@ -1,0 +1,23 @@
+{
+  "totalBefore": 2179,
+  "kept": 1366,
+  "removed": 813,
+  "uniqueNames": 1649,
+  "namesWithAudio": 1016,
+  "byPersonaBefore": {
+    "di_tea": 970,
+    "pedro": 59,
+    "tea_di": 230,
+    "tea": 605,
+    "infantil_di": 263,
+    "default": 52
+  },
+  "byPersonaAfter": {
+    "di_tea": 970,
+    "pedro": 59,
+    "tea_di": 230,
+    "tea": 28,
+    "infantil_di": 27,
+    "default": 52
+  }
+}

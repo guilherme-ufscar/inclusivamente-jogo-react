@@ -1,0 +1,1 @@
+{"statement": "ACERTE O ALVO QUE MOSTRA UM {CARTAZ}.", "background": "02-lp-pill_10-nvl_1-4", "layoutID": "arqueiro_1", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "", "img": "cartz", "result": true}, {"text": "", "img": "placa_3", "result": false}, {"text": "", "img": "placa_0", "result": false}]}]}

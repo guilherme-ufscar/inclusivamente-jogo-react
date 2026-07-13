@@ -1,0 +1,14 @@
+{
+  "total": 1366,
+  "removedDuplicates": 0,
+  "byPersona": {
+    "di_tea": 970,
+    "pedro": 59,
+    "tea_di": 230,
+    "tea": 28,
+    "infantil_di": 27,
+    "default": 52
+  },
+  "audioFiltered": true,
+  "generatedAt": "2026-07-13T14:12:54.474Z"
+}

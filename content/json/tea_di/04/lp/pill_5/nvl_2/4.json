@@ -1,0 +1,1 @@
+{"statement":"COMPLETE: EU ESTAVA COM SONO, ______ FUI DORMIR.","background":"bg_sala_aula","layoutID":"grade_3","random":true,"steps":[{"txt_ref":["COMPLETE: EU ESTAVA COM SONO, ______ FUI DORMIR."],"img_ref":[],"options":[{"text":"POR ISSO","img":"por_isso","result":true},{"text":"MAS","img":"mas","result":false},{"text":"E","img":"e","result":false}]}]}

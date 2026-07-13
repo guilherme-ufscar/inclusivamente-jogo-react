@@ -1,0 +1,57 @@
+{
+  "statement": "RESPONDA CORRETAMENTE",
+  "background": "bg_pomar",
+  "layoutID": "simples_2",
+  "steps": [
+    {
+      "txt_ref": [
+        "HÁ 6 MAÇÃS. 2 CAÍRAM. QUANTAS FICARAM?"
+      ],
+      "img_ref": [
+        "escova"
+      ],
+      "options": [
+        {
+          "text": "4",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "3",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "5",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "HÁ 9 MAÇÃS. 4 CAÍRAM. QUANTAS FICARAM?"
+      ],
+      "img_ref": [
+        "ESCOVA"
+      ],
+      "options": [
+        {
+          "text": "5",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "4",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "6",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

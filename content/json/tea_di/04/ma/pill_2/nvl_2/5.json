@@ -1,0 +1,1 @@
+{"statement":"QUAL FRAÇÃO É MENOR?","background":"bg_sala_aula","layoutID":"grade_3","random":true,"steps":[{"txt_ref":["QUAL FRAÇÃO É MENOR?"],"img_ref":[],"options":[{"text":"1/4","img":"1/4","result":true},{"text":"3/4","img":"3/4","result":false},{"text":"2/4","img":"2/4","result":false}]}]}

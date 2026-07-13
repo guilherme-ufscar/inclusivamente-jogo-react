@@ -1,0 +1,13 @@
+{
+  "name": "jogo-inclusivamente",
+  "private": true,
+  "scripts": {
+    "import": "node scripts/build-catalog.mjs",
+    "import:json": "node scripts/import-json.mjs",
+    "import:so": "node scripts/import-so.mjs",
+    "docker:up": "docker compose up --build -d",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f",
+    "start": "node scripts/build-catalog.mjs && docker compose up --build -d"
+  }
+}

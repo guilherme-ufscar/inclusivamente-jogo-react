@@ -1,0 +1,1 @@
+{"statement": "MISSÃO: QUAL PERSONAGEM AJUDOU NA HISTÓRIA?", "background": "01-ma-pill_10-nvl_2-3", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "O AMIGO QUE LEVANTOU O MENINO", "img": "", "result": true}, {"text": "A BOLA", "img": "", "result": false}, {"text": "O CACHORRO PARADO", "img": "", "result": false}]}]}

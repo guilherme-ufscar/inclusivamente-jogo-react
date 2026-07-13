@@ -1,0 +1,49 @@
+{
+  "statement": "O QUE VEM ANTES DO ALMOÇO?",
+  "background": "bg_2",
+  "layoutID": "simples_2",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "TOMAR CAFÉ",
+          "img": "COMER",
+          "result": true
+        },
+        {
+          "text": "DORMIR",
+          "img": "DORMIR",
+          "result": false
+        },
+        {
+          "text": "BRINCAR",
+          "img": "BRINCAR",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "ESCOVAR OS DENTES",
+          "img": "ESCOVAR",
+          "result": true
+        },
+        {
+          "text": "JANTAR",
+          "img": "COMER",
+          "result": false
+        },
+        {
+          "text": "DORMIR",
+          "img": "DORMIR",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

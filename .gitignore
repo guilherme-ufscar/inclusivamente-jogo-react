@@ -1,0 +1,35 @@
+node_modules
+dist
+.env
+*.log
+pgdata
+apps/api/node_modules
+apps/web/node_modules
+apps/web/dist
+.DS_Store
+Thumbs.db
+
+# Local/generated media (TTS + Unity audio dump — regenerated at runtime)
+content/media/tts-cache/
+content/media/audios/
+*.wav
+*.mp3
+
+# Catalog backups (keep catalog.json)
+content/import/catalog.backup-*.json
+content/import/audio-exists-cache.json
+
+# OmniVoice (open source TTS experiments — nested git / local only)
+omnivoice/
+
+# Scratch audio checks
+_audio_check/
+
+*.pyc
+__pycache__/
+.cache/
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp

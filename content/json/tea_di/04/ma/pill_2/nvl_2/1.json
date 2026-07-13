@@ -1,0 +1,1 @@
+{"statement":"QUAL FRAÇÃO É MAIOR?","background":"bg_sala_aula","layoutID":"grade_3","random":true,"steps":[{"txt_ref":["QUAL FRAÇÃO É MAIOR?"],"img_ref":[],"options":[{"text":"1/2","img":"1/2","result":true},{"text":"1/4","img":"1/4","result":false},{"text":"1/3","img":"1/3","result":false}]}]}

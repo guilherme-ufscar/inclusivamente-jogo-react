@@ -1,0 +1,49 @@
+{
+  "statement": "O QUE ACONTECE PRIMEIRO?",
+  "background": "bg_1",
+  "layoutID": "simples_2",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "ACORDAR",
+          "img": "acordar",
+          "result": true
+        },
+        {
+          "text": "DORMIR",
+          "img": "DORMIR",
+          "result": false
+        },
+        {
+          "text": "JANTAR",
+          "img": "COMER",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "VESTIR ROUPA",
+          "img": "VESTIR",
+          "result": true
+        },
+        {
+          "text": "BRINCAR",
+          "img": "BRINCAR",
+          "result": false
+        },
+        {
+          "text": "DORMIR",
+          "img": "DORMIR",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

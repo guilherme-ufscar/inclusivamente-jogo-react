@@ -1,0 +1,91 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Persona {
+  id          String @id @default(cuid())
+  slug        String @unique
+  name        String
+  color       String @default("#6366F1")
+  description String @default("")
+  years       Year[]
+}
+
+model Year {
+  id        String   @id @default(cuid())
+  code      String
+  label     String
+  personaId String
+  persona   Persona  @relation(fields: [personaId], references: [id], onDelete: Cascade)
+  matters   Matter[]
+
+  @@unique([personaId, code])
+}
+
+model Matter {
+  id     String @id @default(cuid())
+  code   String
+  label  String
+  yearId String
+  year   Year   @relation(fields: [yearId], references: [id], onDelete: Cascade)
+  pills  Pill[]
+
+  @@unique([yearId, code])
+}
+
+model Pill {
+  id         String  @id @default(cuid())
+  index      Int
+  name       String
+  bncc       String?
+  iconUrl    String?
+  matterId   String
+  matter     Matter  @relation(fields: [matterId], references: [id], onDelete: Cascade)
+  levels     Level[]
+
+  @@unique([matterId, index])
+}
+
+model Level {
+  id         String     @id @default(cuid())
+  index      Int
+  pillId     String
+  pill       Pill       @relation(fields: [pillId], references: [id], onDelete: Cascade)
+  activities Activity[]
+
+  @@unique([pillId, index])
+}
+
+model Activity {
+  id                String  @id
+  /// pt | en | es — each language is a distinct activity
+  language          String  @default("pt")
+  /// Groups pt/en/es siblings (usually the Portuguese source id)
+  familyId          String?
+  sourcePath        String?
+  title             String
+  statement         String
+  audioUrl          String?
+  backgroundUrl     String?
+  backgroundId      String?
+  choiceType        String // single | multiple
+  layoutSource      String?
+  randomizeOptions  Boolean @default(true)
+  needsReview       Boolean @default(false)
+  sortOrder         Int     @default(0)
+  /// Full steps with correct flags (server-only use for validate)
+  steps             Json
+  /// Visual helpers for counting / math statements (emoji rows)
+  statementVisuals  Json?
+  levelId           String
+  level             Level   @relation(fields: [levelId], references: [id], onDelete: Cascade)
+
+  @@index([levelId])
+  @@index([language, levelId])
+  @@index([familyId])
+}

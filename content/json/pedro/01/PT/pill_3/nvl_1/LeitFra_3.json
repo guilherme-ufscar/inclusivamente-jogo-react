@@ -1,0 +1,53 @@
+{
+  "statement": "QUAL É A ÚLTIMA PALAVRA DA FRASE?",
+  "background": "bg_bola_ao_alvo",
+  "layoutID": "bolhas_1",
+  "steps": [
+    {
+      "txt_ref": [
+        "A CASA É GRANDE"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "GRANDE",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "CASA",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "É",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "O CÉU É AZUL"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "AZUL",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "CÉU",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "É",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"statement":"LEIA O TEXTO E IDENTIFIQUE O PERSONAGEM PRINCIPAL","background":"bg_cidade","layoutID":"simples_1","random":true,"steps":[{"txt_ref":["BECA ENCONTROU UM CACHORRO PERDIDO E DECIDIU AJUDAR."],"img_ref":["encontrandoumcachorro"],"options":[{"text":"BECA","img":"","result":true},{"text":"CACHORRO","img":"","result":false},{"text":"CASA","img":"","result":false}]}]}

@@ -1,0 +1,49 @@
+{
+  "statement": "ARRASTE AS PALAVRAS PARA FORMAR A FRASE",
+  "background": "bg_jardim_0",
+  "layoutID": "as_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "O",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "GATO",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "DORME",
+          "img": "",
+          "result": true
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "A",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "MENINA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "COME",
+          "img": "",
+          "result": true
+        }
+      ]
+    }
+  ]
+}

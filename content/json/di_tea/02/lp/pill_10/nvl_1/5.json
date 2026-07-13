@@ -1,0 +1,1 @@
+{"statement": "ACERTE O BARCO QUE LEVA UM {CONVITE DE ANIVERSÁRIO}.", "background": "02-lp-pill_10-nvl_1-5", "layoutID": "piratas_1", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "", "img": "convite", "result": true}, {"text": "", "img": "cartz", "result": false}, {"text": "", "img": "placa_0", "result": false}]}]}

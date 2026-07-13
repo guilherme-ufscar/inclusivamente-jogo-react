@@ -1,0 +1,53 @@
+{
+  "statement": "RESPONDA",
+  "background": "bg_escola2",
+  "layoutID": "simples_1",
+  "steps": [
+    {
+      "txt_ref": [
+        "5 – 2 É IGUAL A?"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "3",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "2",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "4",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "8 – 2 É IGUAL A?"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "6",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "5",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "7",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

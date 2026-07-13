@@ -1,0 +1,1 @@
+{"statement":"A TERRA GIRA AO REDOR DO SOL. QUEM GIRA AO REDOR DO SOL?","background":"bg_espaco","layoutID":"bolhas_5","random":true,"steps":[{"txt_ref":[],"img_ref":["terra"],"options":[{"text":"TERRA","img":"","result":true},{"text":"LUA","img":"","result":false},{"text":"MARTE","img":"","result":false}]}]}

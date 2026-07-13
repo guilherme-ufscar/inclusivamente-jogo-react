@@ -1,0 +1,53 @@
+{
+  "statement": "QUAL É O PRÓXIMO NÚMERO?",
+  "background": "bg_bola_ao_alvo",
+  "layoutID": "bola_ao_alvo_2",
+  "steps": [
+    {
+      "txt_ref": [
+        " 1, 2, 3, __"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "4",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "5",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "2",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "5, 6, 7, __"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "8",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "9",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "6",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

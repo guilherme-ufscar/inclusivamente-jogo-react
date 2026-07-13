@@ -1,0 +1,53 @@
+{
+  "statement": "QUAL NÚMERO VEM DEPOIS?",
+  "background": "bg_3",
+  "layoutID": "simples_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "100r"
+      ],
+      "options": [
+        {
+          "text": "9",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "7",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "10",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "bola"
+      ],
+      "options": [
+        {
+          "text": "15",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "16",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "13",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

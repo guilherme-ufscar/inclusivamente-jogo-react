@@ -1,0 +1,1 @@
+{"statement": "COMPLETE A FRASE COM DUAS PALAVRAS.", "background": "01-lp-pill_4-nvl_2-1", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "O MENINO CORRE.", "img": "", "result": true}]}, {"txt_ref": [], "img_ref": [], "options": [{"text": "A MENINA COME BOLO.", "img": "", "result": true}]}]}

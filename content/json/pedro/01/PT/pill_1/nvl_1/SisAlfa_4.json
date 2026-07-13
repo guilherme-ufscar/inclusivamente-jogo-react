@@ -1,0 +1,53 @@
+{
+  "statement": "RESPONDA CORRETAMENTE",
+  "background": "bg_jardim_1",
+  "layoutID": "simples_2",
+  "steps": [
+    {
+      "txt_ref": [
+        "QUAL É A ÚLTIMA LETRA DE PATO?"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "O",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "P",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "T",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "QUAL É A ÚLTIMA LETRA DE CASA?"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "C",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "A",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "D",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

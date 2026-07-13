@@ -1,0 +1,1 @@
+{"statement":"ONDE A HISTÓRIA ACONTECE?","background":"bg_cidade","layoutID":"simples_1","random":true,"steps":[{"txt_ref":[],"img_ref":["encontrandoumcachorro"],"options":[{"text":"NA RUA ","img":"","result":true},{"text":"NA PRAIA","img":"","result":false},{"text":"NO CINEMA","img":"","result":false}]}]}

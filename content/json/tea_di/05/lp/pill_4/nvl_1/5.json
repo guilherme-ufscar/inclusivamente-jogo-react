@@ -1,0 +1,1 @@
+{"statement":"Tico fechou a janela e apagou a luz.","background":"bg_2","layoutID":"simples_2","random":true,"steps":[{"txt_ref":["O QUE TICO PROVAVELMENTE FOI FAZER?"],"img_ref":[],"options":[{"text":"FOI DORMIR","img":"dormir_tico","result":true},{"text":"FOI NADAR","img":"nadar_tico","result":false},{"text":"FOI CORRER","img":"correr_tico","result":false}]}]}

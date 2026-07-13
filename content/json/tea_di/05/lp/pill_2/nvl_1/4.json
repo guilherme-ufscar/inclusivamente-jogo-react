@@ -1,0 +1,1 @@
+{"statement":"MINHA COMIDA FAVORITA. EXPLIQUE QUAL É SUA COMIDA FAVORITA.","background":"bg_mesa_0","layoutID":"simples_4","random":true,"steps":[{"txt_ref":["Minha comida favorita é <u>{0}</u> porque é <u>{1}</u>."],"img_ref":["","comer1"],"options":[{"text":"saborosa","img":"","result":true},{"text":"saudável","img":"","result":true},{"text":"ruim","img":"","result":false}]}]}

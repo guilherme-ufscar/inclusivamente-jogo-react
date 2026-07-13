@@ -1,0 +1,1 @@
+{"statement": "DESCUBRA QUAL É O {PADRÃO} NA ORDEM DAS FIGURAS E COMPLETE A SEQUÊNCIA.", "background": "02-ma-pill_10-nvl_2-3", "layoutID": "cama_elastica_1", "random": true, "steps": [{"txt_ref": [], "img_ref": ["img_ref"], "options": [{"text": "", "img": "sol", "result": true}, {"text": "", "img": "lua", "result": false}, {"text": "", "img": "estrela", "result": false}]}]}

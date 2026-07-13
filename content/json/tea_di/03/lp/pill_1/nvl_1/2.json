@@ -1,0 +1,1 @@
+{"statement":"QUAL FOI O PROBLEMA?","background":"bg_cidade","layoutID":"simples_1","random":true,"steps":[{"txt_ref":[],"img_ref":["encontrandoumcachorro"],"options":[{"text":"CACHORRO PERDIDO","img":"","result":true},{"text":"BECA DORMIU","img":"","result":false},{"text":"CASA FECHADA","img":"","result":false}]}]}

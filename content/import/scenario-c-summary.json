@@ -1,0 +1,44 @@
+{
+  "finishedAt": "2026-07-13",
+  "scenario": "C",
+  "before": {
+    "total": 1272,
+    "by": {
+      "di_tea": 905,
+      "pedro": 59,
+      "tea_di": 229,
+      "tea": 28,
+      "infantil_di": 20,
+      "default": 31
+    }
+  },
+  "after": {
+    "total": 2535,
+    "by": {
+      "di_tea": 1440,
+      "pedro": 59,
+      "tea_di": 229,
+      "infantil_di": 317,
+      "tea": 464,
+      "default": 26
+    }
+  },
+  "delta": 1263,
+  "sources": [
+    "content/json (import-json)",
+    "Unity SO full personas (import-so expanded)",
+    "planilhas atividades/ (3-5, DEV, infantil)",
+    "BNCC/EI generated templates"
+  ],
+  "audio": {
+    "localWavs": "~150+",
+    "uniqueMissingTtsQueue": 2050,
+    "note": "OmniVoice gerar_faltantes.py continua em background; Player usa /media/audios ou painel"
+  },
+  "commands": {
+    "rebuild": "node scripts/run-scenario-c.mjs",
+    "tts": "omnivoice\\.venv\\Scripts\\python.exe omnivoice\\workspace\\gerar_faltantes.py",
+    "seed": "docker compose exec -T api node prisma/seed.js"
+  },
+  "app": "http://localhost:8080"
+}

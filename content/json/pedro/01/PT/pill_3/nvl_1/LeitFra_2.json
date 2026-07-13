@@ -1,0 +1,53 @@
+{
+  "statement": "QUAL FRASE ESTÁ ESCRITA?",
+  "background": "bg_bola_ao_alvo",
+  "layoutID": "bola_ao_alvo_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "bola"
+      ],
+      "options": [
+        {
+          "text": "A BOLA É AZUL",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": " A BOLA É VERDE",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "O SAPO É AZUL.",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "cachorro"
+      ],
+      "options": [
+        {
+          "text": "O CACHORRO LATE.",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "O CACHORRO VOA",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "O CACHORRO DORME",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

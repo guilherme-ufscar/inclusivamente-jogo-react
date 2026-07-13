@@ -1,0 +1,1 @@
+{"statement":"NO GRÁFICO: LIVROS=9, REVISTAS=3. QUAL É A DIFERENÇA ENTRE ELES?","background":"bg_sala_aula","layoutID":"grade_3","random":true,"steps":[{"txt_ref":["NO GRÁFICO: LIVROS=9, REVISTAS=3. QUAL É A DIFERENÇA ENTRE ELES?"],"img_ref":[],"options":[{"text":"6","img":"6","result":true},{"text":"12","img":"12","result":false},{"text":"3","img":"3","result":false}]}]}

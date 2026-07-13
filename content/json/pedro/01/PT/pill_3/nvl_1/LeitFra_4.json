@@ -1,0 +1,53 @@
+{
+  "statement": "QUANTAS PALAVRAS TEM A FRASE?",
+  "background": "bg_rio",
+  "layoutID": "rio_abaixo_1",
+  "steps": [
+    {
+      "txt_ref": [
+        "O SAPO PULA"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "3",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "2",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "4",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "A MENINA COME BOLO"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "4",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "3",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "5",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "statement": "ARRASTE NA ORDEM DO DIA",
+  "background": "bg_3",
+  "layoutID": "as_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "ACORDAR",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "IR À ESCOLA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "BRINCAR",
+          "img": "",
+          "result": true
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "TOMAR CAFÉ",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "IR À ESCOLA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "ALMOÇAR",
+          "img": "",
+          "result": true
+        }
+      ]
+    }
+  ]
+}

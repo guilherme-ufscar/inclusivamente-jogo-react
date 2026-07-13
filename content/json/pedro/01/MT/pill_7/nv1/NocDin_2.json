@@ -1,0 +1,49 @@
+{
+  "statement": "QUAL É O MAIOR VALOR?",
+  "background": "bg_BOLICHE",
+  "layoutID": "boliche_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "",
+          "img": "20r",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "10r",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "5r",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "",
+          "img": "50r",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "20r",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "10r",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

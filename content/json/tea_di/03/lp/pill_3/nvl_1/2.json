@@ -1,0 +1,1 @@
+{"statement":"COMPLETE A PALAVRA COM S OU Z:","background":"bg_cabo_de_guerra","layoutID":"cabo_de_guerra_2","random":true,"steps":[{"txt_ref":[" CA{0}A."],"img_ref":[],"options":[{"text":"S","img":"","result":true},{"text":"Z","img":"","result":false}]},{"txt_ref":["ME{0}A"],"img_ref":[],"options":[{"text":"S","img":"","result":true},{"text":"Z","img":"","result":false}]}]}

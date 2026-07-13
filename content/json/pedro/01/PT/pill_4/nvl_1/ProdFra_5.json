@@ -1,0 +1,53 @@
+{
+  "statement": "COMPLETE: A BOLA É ____",
+  "background": "bg_jardim_1",
+  "layoutID": "bolhas_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "bola"
+      ],
+      "options": [
+        {
+          "text": "AZUL ",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "CORRE ",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "CASA",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "bola"
+      ],
+      "options": [
+        {
+          "text": "GRANDE ",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "COME",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "DORME",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "statement": "COMPLETE A PALAVRA:",
+  "background": "bg_cabo_de_guerra",
+  "layoutID": "cabo_de_guerra_1",
+  "steps": [
+    {
+      "txt_ref": [
+        "CA__A"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "SA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "PA",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "MA",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "CA__"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "BO",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "LA",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "TO",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"statement": "AJUDE DUDU A ENCONTRAR A PLACA QUE INDICA O BANHEIRO.", "background": "02-lp-pill_10-nvl_2-2", "layoutID": "", "random": true, "steps": [{"txt_ref": [], "img_ref": ["img_ref1"], "options": [{"text": "", "img": "img_ref_0", "result": true}, {"text": "", "img": "img_ref_1", "result": false}, {"text": "", "img": "img_ref_2", "result": false}]}]}

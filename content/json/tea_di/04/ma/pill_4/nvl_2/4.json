@@ -1,0 +1,1 @@
+{"statement":"OBSERVE: A = 6, B = 6, C = 2. QUAL É O TOTAL DE A E B JUNTOS?","background":"bg_sala_aula","layoutID":"grade_3","random":true,"steps":[{"txt_ref":["OBSERVE: A = 6, B = 6, C = 2. QUAL É O TOTAL DE A E B JUNTOS?"],"img_ref":[],"options":[{"text":"12","img":"12","result":true},{"text":"6","img":"6","result":false},{"text":"8","img":"8","result":false}]}]}

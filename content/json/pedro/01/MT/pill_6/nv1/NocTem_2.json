@@ -1,0 +1,49 @@
+{
+  "statement": "QUAL ACONTECE À NOITE?",
+  "background": "bg_NOITE",
+  "layoutID": "simples_2",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "TOMAR CAFÉ",
+          "img": "COMER",
+          "result": false
+        },
+        {
+          "text": "DORMIR",
+          "img": "DORMIR",
+          "result": true
+        },
+        {
+          "text": "IR A ESCOLA",
+          "img": "SALA_DE_AULA",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "BRINCAR",
+          "img": "BRINCAR",
+          "result": false
+        },
+        {
+          "text": "JANTAR",
+          "img": "COMER",
+          "result": true
+        },
+        {
+          "text": "ESTUDAR",
+          "img": "LER",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

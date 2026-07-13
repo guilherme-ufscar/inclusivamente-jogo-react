@@ -1,0 +1,28 @@
+{
+  "statement": "QUAL É O FINAL DA HISTÓRIA?",
+  "background": "bg_2",
+  "layoutID": "simples_2",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "ELE CHEGOU EM CASA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "ELE ACORDOU",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "ELE COMEÇOU A CORRER",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

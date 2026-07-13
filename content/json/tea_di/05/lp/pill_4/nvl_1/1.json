@@ -1,0 +1,54 @@
+{
+    "statement": "O QUE PROVAVELMENTE ACONTECEU?",
+    "background": "bg_dia_chuvoso",
+    "layoutID": "simples_1",
+    "random": true,
+    "steps": [
+        {
+            "txt_ref": [
+                "O céu ficou escuro. Logo depois, começaram a cair gotas de água."
+            ],
+            "img_ref": [],
+            "options": [
+                {
+                    "text": "COMEÇOU A CHOVER",
+                    "img": "",
+                    "result": true
+                },
+                {
+                    "text": "FEZ SOL",
+                    "img": "",
+                    "result": false
+                },
+                {
+                    "text": "NEVOU",
+                    "img": "",
+                    "result": false
+                }
+            ]
+        },
+        {
+            "txt_ref": [
+                "O céu ficou escuro. Logo depois, começaram a cair gotas de água."
+            ],
+            "img_ref": [],
+            "options": [
+                {
+                    "text": "O TEMPO MUDOU PARA CHUVA",
+                    "img": "",
+                    "result": true
+                },
+                {
+                    "text": "FICOU MAIS QUENTE",
+                    "img": "",
+                    "result": false
+                },
+                {
+                    "text": "APARECEU ARCO-ÍRIS",
+                    "img": "",
+                    "result": false
+                }
+            ]
+        }
+    ]
+}

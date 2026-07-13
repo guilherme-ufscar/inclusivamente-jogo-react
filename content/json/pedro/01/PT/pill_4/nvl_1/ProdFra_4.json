@@ -1,0 +1,49 @@
+{
+  "statement": "QUAL FRASE TEM SENTIDO?",
+  "background": "bg_5",
+  "layoutID": "simples_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "O SOL BRILHA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "O SOL LATE",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "O SOL COME",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "A ÁGUA MOLHA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "A ÁGUA DORME",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "A ÁGUA PULA",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

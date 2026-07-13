@@ -1,0 +1,1 @@
+{"statement":"QUAL AÇÃO ACONTECEU PRIMEIRO?","background":"bg_cidade","layoutID":"simples_1","random":true,"steps":[{"txt_ref":[],"img_ref":["encontrandoumcachorro"],"options":[{"text":"ENCONTROU O CACHORRO","img":"","result":true},{"text":"LEVOU PARA CASA","img":"","result":false},{"text":"BRINCOU","img":"","result":false}]}]}

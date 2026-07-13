@@ -1,0 +1,1 @@
+{"statement":"QUAL FRAÇÃO REPRESENTA TODAS AS PARTES PINTADAS?","background":"bg_sala_aula","layoutID":"grade_3","random":true,"steps":[{"txt_ref":["QUAL FRAÇÃO REPRESENTA TODAS AS PARTES PINTADAS?"],"img_ref":[],"options":[{"text":"4/4","img":"4/4","result":true},{"text":"1/4","img":"1/4","result":false},{"text":"2/4","img":"2/4","result":false}]}]}

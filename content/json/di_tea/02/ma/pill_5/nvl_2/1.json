@@ -1,0 +1,1 @@
+{"statement": "QUAL É A BARRA MAIOR?", "background": "02-ma-pill_5-nvl_2-1", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "BARRA AZUL", "img": "", "result": true}, {"text": "VERDE", "img": "", "result": false}, {"text": "AMARELA", "img": "", "result": false}]}]}

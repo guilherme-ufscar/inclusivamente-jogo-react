@@ -1,0 +1,53 @@
+{
+  "statement": "QUAL É A PALAVRA CORRETA?",
+  "background": "bg_bola_ao_alvo",
+  "layoutID": "bola_ao_alvo_2",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "sapo"
+      ],
+      "options": [
+        {
+          "text": "SAPO",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "SOPA",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "PASO",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [
+        "casa"
+      ],
+      "options": [
+        {
+          "text": "CASA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "SACO",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "CASSA",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

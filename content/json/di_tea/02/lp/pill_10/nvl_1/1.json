@@ -1,0 +1,1 @@
+{"statement": "ANA DEIXOU UM {BILHETE} NA GELADEIRA. PARA QUEM ELA ESCREVEU ESSE BILHETE?", "background": "02-lp-pill_10-nvl_1-1", "layoutID": "simples_1", "random": true, "steps": [{"txt_ref": [], "img_ref": ["img_ref"], "options": [{"text": "MÃE", "img": "", "result": true}, {"text": "PAI", "img": "", "result": false}, {"text": "AVÓ", "img": "", "result": false}]}]}

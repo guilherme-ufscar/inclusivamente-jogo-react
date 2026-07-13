@@ -1,0 +1,1 @@
+{"statement": "QUAL FRUTA TEM MAIOR QUANTIDADE?", "background": "02-ma-pill_4-nvl_1-1", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "MAÇÃ", "img": "", "result": true}, {"text": "PERA", "img": "", "result": false}, {"text": "UVA", "img": "", "result": false}]}]}

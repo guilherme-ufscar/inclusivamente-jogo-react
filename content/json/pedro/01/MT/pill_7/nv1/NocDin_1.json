@@ -1,0 +1,53 @@
+{
+  "statement": "RESPONDA",
+  "background": "bg_5",
+  "layoutID": "simples_2",
+  "steps": [
+    {
+      "txt_ref": [
+        "QUAL É A MOEDA DE 1 REAL?"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "",
+          "img": "1r",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "50c",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "25c",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "QUAL É A MOEDA DE 2 REAL?"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "",
+          "img": "2R",
+          "result": true
+        },
+        {
+          "text": "",
+          "img": "1R",
+          "result": false
+        },
+        {
+          "text": "",
+          "img": "5R",
+          "result": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"statement": "QUAL OBJETO ESTÁ MAIS PERTO DO MENINO?", "background": "01-ma-pill_7-nvl_1-4", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "BOLA MAIS PERTO", "img": "", "result": true}, {"text": "BOLA MAIS LONGE", "img": "", "result": false}, {"text": "BOLA ATRÁS", "img": "", "result": false}]}]}

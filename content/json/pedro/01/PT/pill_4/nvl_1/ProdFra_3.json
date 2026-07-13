@@ -1,0 +1,49 @@
+{
+  "statement": "ARRASTE AS PALAVRAS PARA FORMAR A FRASE",
+  "background": "bg_1",
+  "layoutID": "as_1",
+  "steps": [
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "O",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "CACHORRO",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "LATE",
+          "img": "",
+          "result": true
+        }
+      ]
+    },
+    {
+      "txt_ref": [],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "A",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "MENINA",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "LÊ",
+          "img": "",
+          "result": true
+        }
+      ]
+    }
+  ]
+}

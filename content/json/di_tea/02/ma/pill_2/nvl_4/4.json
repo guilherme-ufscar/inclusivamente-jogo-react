@@ -1,0 +1,1 @@
+{"statement": "QUAL BILHETE ESTÁ MAIS CLARO?", "background": "02-ma-pill_2-nvl_4-4", "layoutID": "bola_ao_alvo_2", "random": true, "steps": [{"txt_ref": [], "img_ref": [], "options": [{"text": "BILHETE COMPLETO", "img": "", "result": true}, {"text": "INCOMPLETO", "img": "", "result": false}, {"text": "SEM DESPEDIDA", "img": "", "result": false}]}]}

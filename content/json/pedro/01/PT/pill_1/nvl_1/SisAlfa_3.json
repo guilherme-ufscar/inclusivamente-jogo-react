@@ -1,0 +1,53 @@
+{
+  "statement": "TOQUE NA LETRA CORRETA",
+  "background": "bg_jardim_0",
+  "layoutID": "simples_2",
+  "steps": [
+    {
+      "txt_ref": [
+        "TOQUE NA LETRA QUE ESTÁ NO COMEÇO DE SOL"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "S",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "L",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "O",
+          "img": "",
+          "result": false
+        }
+      ]
+    },
+    {
+      "txt_ref": [
+        "TOQUE NA LETRA QUE ESTÁ NO COMEÇO DE CASA"
+      ],
+      "img_ref": [],
+      "options": [
+        {
+          "text": "C",
+          "img": "",
+          "result": true
+        },
+        {
+          "text": "A",
+          "img": "",
+          "result": false
+        },
+        {
+          "text": "D",
+          "img": "",
+          "result": false
+        }
+      ]
+    }
+  ]
+}
