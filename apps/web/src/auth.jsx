@@ -69,10 +69,35 @@ export function personaSlugFromUser(user, payload) {
   return null;
 }
 
+function truthyFlag(v) {
+  if (v === true || v === 1) return true;
+  if (typeof v === "string") {
+    const s = v.toLowerCase().trim();
+    return s === "1" || s === "true" || s === "yes" || s === "admin";
+  }
+  return false;
+}
+
 export function isAdminUser(user, payload) {
   const role = String(user?.role || payload?.role || "").toLowerCase();
-  if (role === "admin" || role === "gestor") return true;
-  if (user?.isAdmin || user?.is_admin || payload?.isAdmin || payload?.is_admin) return true;
+  if (role === "admin" || role === "gestor" || role === "administrator") return true;
+  if (
+    truthyFlag(user?.isAdmin) ||
+    truthyFlag(user?.is_admin) ||
+    truthyFlag(user?.isadmin) ||
+    truthyFlag(payload?.isAdmin) ||
+    truthyFlag(payload?.is_admin) ||
+    truthyFlag(payload?.isadmin)
+  ) {
+    return true;
+  }
+  // Local UI preview: ?admin=1
+  try {
+    if (new URLSearchParams(window.location.search).get("admin") === "1") return true;
+    if (sessionStorage.getItem("inclusiva_force_admin") === "1") return true;
+  } catch {
+    /* ignore */
+  }
   return false;
 }
 
@@ -106,12 +131,24 @@ function clearToken() {
 function captureTokenFromUrl() {
   try {
     const url = new URL(window.location.href);
+    // Force admin UI preview (session only)
+    if (url.searchParams.get("admin") === "1") {
+      try {
+        sessionStorage.setItem("inclusiva_force_admin", "1");
+      } catch {
+        /* ignore */
+      }
+      url.searchParams.delete("admin");
+    }
     const t = url.searchParams.get("token");
     if (t) {
       persistToken(t);
       url.searchParams.delete("token");
       window.history.replaceState({}, "", url.pathname + url.search + url.hash);
       return t;
+    }
+    if (url.search !== window.location.search) {
+      window.history.replaceState({}, "", url.pathname + url.search + url.hash);
     }
   } catch {
     /* ignore */

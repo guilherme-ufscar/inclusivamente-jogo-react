@@ -5,6 +5,8 @@ import App from "./App";
 import { LanguageProvider } from "./i18n";
 import { AuthProvider } from "./auth";
 import { PersonaProvider } from "./persona";
+import AccessibilityBar from "./components/AccessibilityBar";
+import AdminBanner from "./components/AdminBanner";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -13,7 +15,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <LanguageProvider>
         <AuthProvider>
           <PersonaProvider>
+            <AdminBanner />
             <App />
+            <AccessibilityBar />
           </PersonaProvider>
         </AuthProvider>
       </LanguageProvider>

@@ -14,6 +14,7 @@ import {
   autonomyFromStats,
 } from "../activityId";
 import { markCompleted } from "../progress";
+import { pickFeedbackMessage } from "../feedbackMessages";
 
 /** Visual row for counting / spatial / arithmetic statements */
 function StatementVisuals({ visual }) {
@@ -237,6 +238,60 @@ function StatementVisuals({ visual }) {
     );
   }
 
+  // Word chips for "quantas palavras tem a frase"
+  if (visual.type === "word_chips" && visual.words?.length) {
+    return (
+      <div className="mt-4 rounded-2xl bg-sky-50 px-4 py-5 text-center">
+        {visual.caption && (
+          <p className="mb-3 text-xs font-extrabold uppercase tracking-wide text-sky-600">
+            {visual.caption}
+          </p>
+        )}
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+          {visual.words.map((w, i) => (
+            <span
+              key={i}
+              className="inline-flex items-center justify-center rounded-2xl bg-white px-3 py-2 text-xl font-black text-sky-800 shadow-md sm:text-2xl"
+            >
+              {w}
+            </span>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  // Syllable breakdown (e.g. MA · CA · CO) — never object balls
+  if (visual.type === "syllables" && (visual.parts?.length || visual.caption)) {
+    const parts = visual.parts?.length
+      ? visual.parts
+      : String(visual.caption || "")
+          .split(/\s*[·•\-]\s*/)
+          .filter(Boolean);
+    return (
+      <div className="mt-4 rounded-2xl bg-violet-50 px-4 py-5 text-center">
+        <p className="mb-3 text-xs font-extrabold uppercase tracking-wide text-violet-500">
+          Sílabas
+        </p>
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+          {parts.map((p, i) => (
+            <span
+              key={i}
+              className="inline-flex min-w-[3rem] items-center justify-center rounded-2xl bg-white px-3 py-2 text-2xl font-black text-violet-800 shadow-md sm:text-3xl"
+            >
+              {p}
+            </span>
+          ))}
+        </div>
+        {visual.word && (
+          <p className="mt-3 text-lg font-extrabold text-violet-700 sm:text-xl">
+            {visual.word}
+          </p>
+        )}
+      </div>
+    );
+  }
+
   return null;
 }
 
@@ -246,7 +301,7 @@ export default function Player() {
   const location = useLocation();
   const audioRef = useRef(null);
   const { lang, t } = useLanguage();
-  const { hasTutor, demo, token } = useAuth();
+  const { hasTutor, demo, token, isAdmin } = useAuth();
   const { slug } = usePersona();
   const pillId = location.state?.pillId || null;
   const orderedIds = location.state?.orderedIds || null;
@@ -256,7 +311,8 @@ export default function Player() {
   const [err, setErr] = useState(null);
   const [stepIndex, setStepIndex] = useState(0);
   const [selected, setSelected] = useState([]);
-  const [feedback, setFeedback] = useState(null); // null | 'ok' | 'bad'
+  const [feedback, setFeedback] = useState(null); // null | 'ok' | 'bad' | 'done'
+  const [feedbackText, setFeedbackText] = useState("");
   const [busy, setBusy] = useState(false);
   const [bgFailed, setBgFailed] = useState(false);
 
@@ -283,7 +339,7 @@ export default function Player() {
       markCompleted(slug, pillId, r.activityKey);
     }
 
-    if (demo || !token) return;
+    if (demo || !token || isAdmin) return;
     const correct = r.correct;
     const errors = r.errors;
     const time_spent = Math.max(
@@ -305,7 +361,7 @@ export default function Player() {
     } catch {
       /* offline queue handled in client */
     }
-  }, [demo, token, hasTutor, pillId, slug]);
+  }, [demo, token, isAdmin, hasTutor, pillId, slug]);
 
   useEffect(() => {
     setAct(null);
@@ -313,6 +369,7 @@ export default function Player() {
     setStepIndex(0);
     setSelected([]);
     setFeedback(null);
+    setFeedbackText("");
     setBgFailed(false);
     stopSpeaking();
     if (audioRef.current) {
@@ -338,7 +395,8 @@ export default function Player() {
       .activity(activityId)
       .then(async (a) => {
         setAct(a);
-        if (demo || !token) return;
+        // Admin = preview only (no painel activity reports)
+        if (demo || !token || isAdmin) return;
         const payload = {
           activity_id: toPainelActivityId(a),
           has_tutor: Boolean(hasTutor),
@@ -388,6 +446,59 @@ export default function Player() {
     }
   }
 
+  /** Speak any text with neural TTS (fallback browser). Resolves when audio ends. */
+  function speakText(text) {
+    const clean = String(text || "").trim();
+    if (!clean) return Promise.resolve();
+
+    if (audioRef.current) {
+      try {
+        audioRef.current.pause();
+      } catch {
+        /* ignore */
+      }
+      audioRef.current = null;
+    }
+    stopSpeaking();
+
+    const ttsLang = act?.language || lang || "pt";
+
+    return new Promise((resolve) => {
+      let settled = false;
+      const done = () => {
+        if (settled) return;
+        settled = true;
+        resolve();
+      };
+
+      // Safety: never block forever if TTS hangs
+      const maxMs = Math.min(12000, 1800 + clean.length * 90);
+      const safety = setTimeout(done, maxMs);
+
+      (async () => {
+        try {
+          const url = api.ttsUrl(clean, ttsLang);
+          const a = new Audio(url);
+          audioRef.current = a;
+          a.onended = () => {
+            clearTimeout(safety);
+            done();
+          };
+          a.onerror = () => {
+            clearTimeout(safety);
+            speakPortuguese(clean, { rate: 0.92, pitch: 1.12, lang: ttsLang });
+            setTimeout(done, Math.min(5000, 1200 + clean.length * 70));
+          };
+          await a.play();
+        } catch {
+          clearTimeout(safety);
+          speakPortuguese(clean, { rate: 0.92, pitch: 1.12, lang: ttsLang });
+          setTimeout(done, Math.min(5000, 1200 + clean.length * 70));
+        }
+      })();
+    });
+  }
+
   async function confirm() {
     if (!act || selected.length === 0 || busy) return;
     setBusy(true);
@@ -396,38 +507,52 @@ export default function Player() {
         stepIndex,
         selectedOptionIds: selected,
       });
+      const kind = res.correct ? "ok" : "bad";
       if (res.correct) {
         reportRef.current.correct += 1;
       } else {
         reportRef.current.errors += 1;
       }
-      setFeedback(res.correct ? "ok" : "bad");
+
+      const ttsLang = act?.language || lang || "pt";
+      const msg = pickFeedbackMessage(kind, ttsLang);
+      setFeedbackText(msg);
+      setFeedback(kind);
+
+      // Always speak the random feedback message
+      const speech = speakText(msg);
+
       if (res.correct) {
-        setTimeout(async () => {
-          if (stepIndex < act.steps.length - 1) {
-            setStepIndex((s) => s + 1);
-            setSelected([]);
-            setFeedback(null);
-          } else {
-            await finishReport();
-            // Next exercise in sequential list (memorização)
-            let nextId = null;
-            if (Array.isArray(orderedIds) && orderedIds.length) {
-              const idx = orderedIds.indexOf(act.id);
-              if (idx >= 0 && idx < orderedIds.length - 1) nextId = orderedIds[idx + 1];
-            } else if (act.nextActivityId) {
-              nextId = act.nextActivityId;
-            }
-            if (nextId) {
-              navigate(`/play/${nextId}`, {
-                state: { backTo, pillId, orderedIds },
-              });
-            } else {
-              setFeedback("done");
-            }
+        await speech;
+        // Small pause after voice so the kid can read the banner
+        await new Promise((r) => setTimeout(r, 350));
+
+        if (stepIndex < act.steps.length - 1) {
+          setStepIndex((s) => s + 1);
+          setSelected([]);
+          setFeedback(null);
+          setFeedbackText("");
+        } else {
+          await finishReport();
+          // Next exercise in sequential list (memorização)
+          let nextId = null;
+          if (Array.isArray(orderedIds) && orderedIds.length) {
+            const idx = orderedIds.indexOf(act.id);
+            if (idx >= 0 && idx < orderedIds.length - 1) nextId = orderedIds[idx + 1];
+          } else if (act.nextActivityId) {
+            nextId = act.nextActivityId;
           }
-        }, 900);
+          if (nextId) {
+            navigate(`/play/${nextId}`, {
+              state: { backTo, pillId, orderedIds },
+            });
+          } else {
+            setFeedback("done");
+            setFeedbackText("");
+          }
+        }
       }
+      // On error: speech plays; kid taps "Tentar de novo"
     } catch (e) {
       setErr(e.message);
     } finally {
@@ -442,26 +567,7 @@ export default function Player() {
         ? step.prompt
         : act?.statement;
     if (!text) return;
-
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current = null;
-    }
-    stopSpeaking();
-
-    // ALWAYS neural TTS by language (pt/en/es). Cached on server.
-    try {
-      const ttsLang = act?.language || lang || "pt";
-      const url = api.ttsUrl(text, ttsLang);
-      const a = new Audio(url);
-      audioRef.current = a;
-      await a.play();
-      return;
-    } catch {
-      /* fall through to browser only if neural TTS is down */
-    }
-
-    speakPortuguese(text, { rate: 0.92, pitch: 1.12, lang: act?.language || lang });
+    await speakText(text);
   }
 
   if (err) {
@@ -612,7 +718,17 @@ export default function Player() {
               <button
                 type="button"
                 onClick={() => {
+                  stopSpeaking();
+                  if (audioRef.current) {
+                    try {
+                      audioRef.current.pause();
+                    } catch {
+                      /* ignore */
+                    }
+                    audioRef.current = null;
+                  }
                   setFeedback(null);
+                  setFeedbackText("");
                   setSelected([]);
                 }}
                 className="btn-pop bg-amber-400 px-6 py-4 text-lg text-slate-900"
@@ -623,23 +739,30 @@ export default function Player() {
           </div>
 
           <AnimatePresence>
-            {feedback === "ok" && (
-              <motion.p
-                initial={{ opacity: 0, scale: 0.9 }}
+            {feedback === "ok" && feedbackText && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.92 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="mt-4 text-center text-2xl font-black text-emerald-600"
+                className="mt-5 rounded-3xl bg-emerald-100 px-5 py-6 text-center shadow-inner sm:px-8 sm:py-8"
               >
-                Muito bem! ✓
-              </motion.p>
+                <p className="text-3xl font-black leading-tight text-emerald-700 sm:text-4xl md:text-5xl">
+                  {feedbackText}
+                </p>
+                <p className="mt-2 text-4xl sm:text-5xl" aria-hidden="true">
+                  ✓
+                </p>
+              </motion.div>
             )}
-            {feedback === "bad" && (
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="mt-4 text-center text-xl font-black text-rose-600"
+            {feedback === "bad" && feedbackText && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.92 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="mt-5 rounded-3xl bg-rose-100 px-5 py-6 text-center shadow-inner sm:px-8 sm:py-8"
               >
-                {t("almost")}
-              </motion.p>
+                <p className="text-3xl font-black leading-tight text-rose-700 sm:text-4xl md:text-5xl">
+                  {feedbackText}
+                </p>
+              </motion.div>
             )}
             {feedback === "done" && (
               <motion.div
@@ -647,7 +770,7 @@ export default function Player() {
                 animate={{ opacity: 1 }}
                 className="mt-4 rounded-2xl bg-emerald-50 p-4 text-center"
               >
-                <p className="text-2xl font-black text-emerald-700">Nível completo! 🎉</p>
+                <p className="text-2xl font-black text-emerald-700">{t("done")}</p>
                 <Link to={backTo} className="mt-3 inline-block font-extrabold text-emerald-800 underline">
                   {t("back")}
                 </Link>

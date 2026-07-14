@@ -122,4 +122,8 @@ function main() {
   console.log(JSON.stringify({ options_fixed: optN, statements_fixed: stN }, null, 2));
 }
 
-main();
+// Only rewrite catalog when executed directly (not when imported)
+const isMain =
+  process.argv[1] &&
+  path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isMain) main();

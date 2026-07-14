@@ -58,6 +58,7 @@ export const api = {
       body: JSON.stringify(body),
     }),
   languages: () => request("/api/meta/languages"),
+  catalogStats: () => request("/api/stats/catalog"),
   ttsUrl: (text, lang) =>
     `${BASE}/api/tts?text=${encodeURIComponent(String(text).slice(0, 800))}&lang=${encodeURIComponent(lang || currentLang())}`,
 };

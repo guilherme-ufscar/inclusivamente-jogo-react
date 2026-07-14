@@ -91,6 +91,119 @@ app.get("/api/meta/languages", (req, res) => {
   });
 });
 
+const PERSONA_JWT_ORDER = ["padrao", "tea", "di_tea", "di_severa", "visual"];
+
+/**
+ * Catalog stats for admin mode: counts by persona, language, year, matter, choice type.
+ * GET /api/stats/catalog
+ */
+app.get("/api/stats/catalog", async (_req, res) => {
+  try {
+    const rows = await prisma.$queryRaw`
+      SELECT
+        p.slug AS persona_slug,
+        p.name AS persona_name,
+        p.color AS persona_color,
+        y.code AS year_code,
+        m.code AS matter_code,
+        a.language AS language,
+        a."choiceType" AS choice_type,
+        COUNT(*)::int AS n
+      FROM "Activity" a
+      INNER JOIN "Level" l ON a."levelId" = l.id
+      INNER JOIN "Pill" pill ON l."pillId" = pill.id
+      INNER JOIN "Matter" m ON pill."matterId" = m.id
+      INNER JOIN "Year" y ON m."yearId" = y.id
+      INNER JOIN "Persona" p ON y."personaId" = p.id
+      GROUP BY p.slug, p.name, p.color, y.code, m.code, a.language, a."choiceType"
+    `;
+
+    const byLanguage = { pt: 0, en: 0, es: 0 };
+    const byChoiceType = {};
+    const personaMap = new Map();
+    let total = 0;
+
+    for (const r of rows) {
+      const n = Number(r.n) || 0;
+      total += n;
+      const lang = String(r.language || "pt");
+      byLanguage[lang] = (byLanguage[lang] || 0) + n;
+      const ct = String(r.choice_type || "single");
+      byChoiceType[ct] = (byChoiceType[ct] || 0) + n;
+
+      const slug = String(r.persona_slug);
+      if (!personaMap.has(slug)) {
+        personaMap.set(slug, {
+          slug,
+          name: r.persona_name,
+          color: r.persona_color,
+          total: 0,
+          byLanguage: { pt: 0, en: 0, es: 0 },
+          byYear: {},
+          byMatter: {},
+          byChoiceType: {},
+        });
+      }
+      const pe = personaMap.get(slug);
+      pe.total += n;
+      pe.byLanguage[lang] = (pe.byLanguage[lang] || 0) + n;
+      const yc = String(r.year_code || "");
+      pe.byYear[yc] = (pe.byYear[yc] || 0) + n;
+      const mc = String(r.matter_code || "").toLowerCase();
+      pe.byMatter[mc] = (pe.byMatter[mc] || 0) + n;
+      pe.byChoiceType[ct] = (pe.byChoiceType[ct] || 0) + n;
+    }
+
+    const personas = PERSONA_JWT_ORDER.map((slug) => {
+      const pe = personaMap.get(slug);
+      if (pe) {
+        const jwtPersona = PERSONA_JWT_ORDER.indexOf(slug);
+        return { ...pe, jwtPersona };
+      }
+      const known = personaMap.get(slug);
+      return (
+        known || {
+          slug,
+          name: slug,
+          color: "#6366F1",
+          total: 0,
+          byLanguage: { pt: 0, en: 0, es: 0 },
+          byYear: {},
+          byMatter: {},
+          byChoiceType: {},
+          jwtPersona: PERSONA_JWT_ORDER.indexOf(slug),
+        }
+      );
+    }).concat(
+      [...personaMap.values()]
+        .filter((p) => !PERSONA_JWT_ORDER.includes(p.slug))
+        .map((p) => ({ ...p, jwtPersona: null }))
+    );
+
+    // Prefer DB names if map had them for ordered slugs
+    for (let i = 0; i < personas.length; i++) {
+      const live = personaMap.get(personas[i].slug);
+      if (live) personas[i] = { ...live, jwtPersona: PERSONA_JWT_ORDER.indexOf(live.slug) };
+    }
+
+    res.json({
+      total,
+      byLanguage,
+      byChoiceType,
+      personas: personas.filter((p, i, arr) => arr.findIndex((x) => x.slug === p.slug) === i),
+      filters: {
+        languages: ["pt", "en", "es"],
+        choiceTypes: Object.keys(byChoiceType),
+        years: [...new Set(rows.map((r) => String(r.year_code)))].sort(),
+        matters: [...new Set(rows.map((r) => String(r.matter_code).toLowerCase()))].sort(),
+      },
+    });
+  } catch (e) {
+    console.error("stats/catalog", e);
+    res.status(500).json({ error: "stats_failed", detail: String(e.message || e) });
+  }
+});
+
 /**
  * Unity money codes → currency of each locale (pt BR, en US, es ES).
  * 1r → R$ 1 / $1 / €1 | 50c → 50 centavos / 50¢ / 50 céntimos
@@ -157,8 +270,6 @@ function publicSteps(steps, randomize = true, language = "pt") {
 }
 
 /** Official JWT persona order from inclusivamente panel (0..4) */
-const PERSONA_JWT_ORDER = ["padrao", "tea", "di_tea", "di_severa", "visual"];
-
 app.get("/api/personas", async (req, res) => {
   const language = langFromRequest(req);
   const personas = await prisma.persona.findMany({

@@ -70,6 +70,16 @@ function nounFromContext(statement, prompt) {
 
 function isCountQuestion(text) {
   const s = String(text || "").toUpperCase();
+  // NEVER treat literacy (sílabas / palavras / letras) as object counting (was drawing balls)
+  if (/S[IÍ]LABA|SYLLABLE|SEPAR(E|A) A PALAVRA|FORME AS PALAVRAS/.test(s)) {
+    return false;
+  }
+  if (/QUANTAS PALAVRAS|QUANTAS LETRAS|QUANTOS SONS|HOW MANY WORDS|CU[AÁ]NTAS PALABRAS/.test(s)) {
+    return false;
+  }
+  if (/QUAL LETRA|QUAL PALAVRA|COMPLETE A PALAVRA|ESCRITA/.test(s) && !/QUANTOS |QUANTAS [A-Z]* (MAÇ|BOLA|FRUT|OBJETO|DEDO)/.test(s)) {
+    if (/QUANTAS S[IÍ]LABAS|QUANTOS SONS|QUANTAS LETRAS/.test(s)) return false;
+  }
   return (
     /QUANTOS|QUANTAS|CONTE |VAMOS CONTAR|QUANTIDADE|TÊM AQUI|TEM AQUI|RESTARAM|AO TODO|CADA UM|CADA GRUPO|HÁ NA|HA NA|SOBRAM|SOBRA\?|TEM AGORA|RECEBEU|RECEBE\?/.test(
       s
